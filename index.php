@@ -19,6 +19,8 @@
         require('cupcake-confirmation.php');
     }
 
+    echo "<br><br>";
+
     ?>
 
     <form method="post" action="">
@@ -54,31 +56,8 @@
 
                 }
 
-
-
-
             ?>
-            <!-- <label>
-                <input type="checkbox" value="grasshopper" name="flavors[]">&nbsp;The Grasshopper
-            </label><br>
-            <label>
-                <input type="checkbox" value="maple" name="flavors[]">&nbsp;Whiskey Maple Bacon
-            </label><br>
-            <label>
-                <input type="checkbox" value="carrot" name="flavors[]">&nbsp;Carrot Walnut
-            </label><br>
-            <label>
-                <input type="checkbox" value="caramel" name="flavors[]">&nbsp;Salted Caramel Cupcake
-            </label><br>
-            <label>
-                <input type="checkbox" value="velvet" name="flavors[]">&nbsp;Red Velvet
-            </label><br>
-            <label>
-                <input type="checkbox" value="lemon" name="flavors[]"> Lemon Drop
-            </label><br>
-            <label>
-                <input type="checkbox" value="tiramisu" name="flavors[]"> Tiramisu
-            </label><br> -->
+
         </fieldset>
         <br>
 
