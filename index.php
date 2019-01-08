@@ -30,7 +30,7 @@
             require('cupcake-confirmation.php');
         }
 
-        // Adds space between the order confirmation and the form
+        // Adds space between the order summary and the form
         echo "<br><br>";
 
     ?>
@@ -60,7 +60,7 @@
 
             <?php
 
-                // Associate array of flavors
+                // Associative array of flavors
                 $flavors = array("grasshopper" => "The Grasshopper", "maple" => "Whiskey Maple Bacon",
                     "carrot" => "Carrot Walnut", "caramel" => "Salted Caramel Cupcake", "velvet" => "Red Velvet",
                     "lemon" => "Lemon Drop", "tiramisu" => "Tiramisu");
