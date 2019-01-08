@@ -52,8 +52,11 @@
 
                 foreach ($flavors as $abbreviation => $flavorName) {
 
-                    echo "<label><input type=\"checkbox\" value=\"$abbreviation\" name=\"flavors[]\"> $flavorName</label><br>";
+                    echo "<label><input type=\"checkbox\" value=\"$abbreviation\" name=\"flavors[]\" ";
 
+                    echo (isset($_POST['flavors']) && in_array("$abbreviation", $_POST['flavors'])) ? "checked = 'checked'" : '';
+
+                    echo "> $flavorName</label><br>";
                 }
 
             ?>
