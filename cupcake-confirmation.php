@@ -46,7 +46,6 @@
             else if (isset($flavors)) {
 
                 $flavors = $_POST['flavors'];
-
             }
         }
     }
@@ -56,23 +55,27 @@
         $cupcakeCount = 0;
         $orderTotal = 0;
 
+        $displayFlavors = array("grasshopper" => "The Grasshopper", "maple" => "Whiskey Maple Bacon",
+            "carrot" => "Carrot Walnut", "caramel" => "Salted Caramel Cupcake", "velvet" => "Red Velvet",
+            "lemon" => "Lemon Drop", "tiramisu" => "Tiramisu");
+
         echo "Thank you, $fname, for your order!";
 
         echo "<ul>";
-        foreach ($flavors as $flavor) {
+        foreach ($displayFlavors as $abbrev => $name) {
 
-            echo "<li>$flavor</li>";
-            $cupcakeCount++;
+            if (in_array($abbrev, $flavors)) {
+
+                echo "<li>$name</li>";
+                // Increments cupcake count by one
+                $cupcakeCount++;
+            }
         }
 
         echo "</ul>";
 
         $orderTotal = 3.50 * $cupcakeCount;
         printf("Order Total: $%.2f", $orderTotal);
-
-
-
-
     }
 
 ?>
